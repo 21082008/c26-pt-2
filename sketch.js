@@ -15,6 +15,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
+    console.log("Hi Git, Bye Git");
 
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
@@ -41,9 +42,7 @@ function setup(){
 function draw(){
     background(backgroundImg);
     Engine.update(engine);
-    console.log(box2.body.position.x);
-    console.log(box2.body.position.y);
-    console.log(box2.body.angle);
+   
     box1.display();
     box2.display();
     ground.display();
